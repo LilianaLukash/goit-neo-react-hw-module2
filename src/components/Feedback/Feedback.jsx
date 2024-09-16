@@ -1,4 +1,4 @@
-export default function Feedback(feedback) {
+export default function Feedback({ feedback }) {
     const total = feedback.good + feedback.bad + feedback.neutral;
     const positiveFeedback = total > 0 ? (feedback.good / total * 100).toFixed(0) : 0;
 
