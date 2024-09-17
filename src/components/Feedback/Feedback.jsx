@@ -1,7 +1,6 @@
-export default function Feedback({ feedback }) {
+export default function Feedback({ feedback, positiveFeedback}) {
     const total = feedback.good + feedback.bad + feedback.neutral;
-    const positiveFeedback = total > 0 ? (feedback.good / total * 100).toFixed(0) : 0;
-
+    
 
     return (
         <div className="feedback">
